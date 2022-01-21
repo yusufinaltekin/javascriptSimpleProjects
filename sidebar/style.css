@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  height: 100vh;
+  width: 200px;
+  background: rgb(128, 128, 128);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.nav ul {
+  list-style: none;
+  width: 100%;
+  margin-top: 40px;
+}
+.nav ul li {
+  width: 100%;
+  border-bottom: 1px solid white;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.nav ul li:hover {
+  background-color: rgb(168, 167, 167);
+}
+.nav ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+}
+.sidebar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.sidebar.active + .nav {
+  right: 0px;
+}
